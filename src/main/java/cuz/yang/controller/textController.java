@@ -1,7 +1,6 @@
-package Controller;
+package cuz.yang.controller;
 
 import org.springframework.web.bind.annotation.RestController;
-
 @RestController
 public class textController {
 }

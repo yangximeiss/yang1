@@ -5,3 +5,4 @@ import cuz.yang.model.Course;
 
 public interface CourseMapper extends BaseMapper<Course> {
 }
+

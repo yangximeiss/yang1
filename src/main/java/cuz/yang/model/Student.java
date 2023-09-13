@@ -6,8 +6,9 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Student {
-    private String sid;
+    private String id;
     private String name;
     private String gender;
-    private double age;
+    private int age;
+
 }

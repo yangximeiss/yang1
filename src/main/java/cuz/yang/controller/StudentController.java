@@ -21,6 +21,26 @@ public class StudentController {
         return gson.toJson(studentList);
     }
 
+    @GetMapping("/student/{id}")
+    public String getStudent(@PathVariable("id") String id){
+       Student s = studentMapper.selectById(id);
+        return gson.toJson(s);
+    }
+
+    @PostMapping("/addstudent")
+    public void AddStudent(@RequestBody Student student) {
+        studentMapper.insert(student);
+    }
+    @DeleteMapping("/delstudent")
+    public void DeleteStudent(@RequestBody Student student) {
+        studentMapper.deleteById(student);
+    }
+
+    @PutMapping("/updatestudent")
+    public void UpdateStudent(@RequestBody Student student) {
+        studentMapper.updateById(student);
+    }
+
 
 
 }

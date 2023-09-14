@@ -9,4 +9,5 @@ public class Course {
     private String cname;
     private String cid;
     private double credit;
+
 }

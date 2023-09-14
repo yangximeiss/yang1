@@ -6,7 +6,16 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Scores {
-    private String sid;
-    private String cid;
-    private double score;
+    String sid;
+    String name;
+    int java;
+    int english;
+    int mathematics;
+    int game;
+    int algebra;
+    int military;
+    int modeling;
+
+    public Scores() {
+    }
 }

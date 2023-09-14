@@ -29,7 +29,7 @@ public class GpaController {
 
     private Gson gson = new Gson();
 
-   @GetMapping("/gpa")
+    /*@GetMapping("/gpa")
     public String getGpaList(){
         List<Student> studentList = studentMapper.selectList(null);
         for (Student s: studentList) {
@@ -61,7 +61,8 @@ public class GpaController {
 
             studentMapper.updateById(s);
 
+
         }
         return gson.toJson(studentList);
-    }
+    }*/
 }
